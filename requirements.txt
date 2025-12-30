@@ -1,0 +1,8 @@
+streamlit
+pandas
+yfinance
+ta
+requests
+textblob
+lxml
+html5lib
