@@ -107,6 +107,30 @@ def calcular_score(ema20, ema50, rsi, sentimiento):
 
     return max(0, min(score, 100))
 
+
+#analizar mercado
+
+@st.cache_data(ttl=60 * 60)
+def estado_mercado():
+    datos = yf.download("QQQ", period="6mo", interval="1d", progress=False)
+
+    if datos.empty:
+        return "DESCONOCIDO"
+
+    if isinstance(datos.columns, pd.MultiIndex):
+        datos.columns = datos.columns.get_level_values(0)
+
+    close = datos["Close"].dropna()
+
+    ema20 = EMAIndicator(close, 20).ema_indicator().iloc[-1]
+    ema50 = EMAIndicator(close, 50).ema_indicator().iloc[-1]
+
+    if ema20 > ema50:
+        return "ALCISTA"
+    else:
+        return "DEBIL"
+
+
 # =========================================================
 # EXPLICACIÓN DEL SCORE (NUEVO, NO TOCA NADA)
 # =========================================================
@@ -230,12 +254,77 @@ def detectar_cruces(historico, umbral=70):
 
     return pd.DataFrame(eventos)
 
+    # ANALIZAR TENDENCIA DEL Score
+def evaluar_tendencia_score(ticker, score_actual, historico):
+    datos = historico[historico["Ticker"] == ticker] \
+        .sort_values("Fecha")
+
+    if len(datos) < 2:
+        return {
+            "EstadoScore": "Nuevo",
+            "BonusScore": 0
+        }
+
+    score_ayer = datos.iloc[-2]["Score"]
+
+    # Score creciente
+    if score_actual > score_ayer:
+        return {
+            "EstadoScore": "Creciendo",
+            "BonusScore": 5
+        }
+
+    # Score estable alto
+    if score_actual >= 70 and score_ayer >= 70:
+        return {
+            "EstadoScore": "Fuerte",
+            "BonusScore": 3
+        }
+
+    # Score perdiendo fuerza
+    return {
+        "EstadoScore": "Debilitándose",
+        "BonusScore": -5
+    }
+
+
+def estilo_estado_score(valor):
+    if valor == "Creciendo":
+        return "background-color: #d4edda; color: #155724; font-weight: bold;"
+    elif valor == "Fuerte":
+        return "background-color: #cce5ff; color: #004085; font-weight: bold;"
+    elif valor == "Debilitándose":
+        return "background-color: #f8d7da; color: #721c24; font-weight: bold;"
+    elif valor == "Nuevo":
+        return "background-color: #e2e3e5; color: #383d41;"
+    return ""
+
+
+    #funcion evaluar volumen_actual
+def evaluar_volumen(volumen_relativo):
+    if volumen_relativo >= 1.2:
+        return {
+            "EstadoVolumen": "Alto",
+            "BonusVolumen": 5
+        }
+    elif volumen_relativo < 0.8:
+        return {
+            "EstadoVolumen": "Bajo",
+            "BonusVolumen": -5
+        }
+    else:
+        return {
+            "EstadoVolumen": "Normal",
+            "BonusVolumen": 0
+        }
 
 
 
 # =========================================================
 # ANÁLISIS COMPLETO DE UNA ACCIÓN
 # =========================================================
+
+
 def analizar_accion(ticker):
     datos = yf.download(ticker, period="6mo", interval="1d", progress=False)
 
@@ -251,39 +340,97 @@ def analizar_accion(ticker):
     datos["EMA50"] = EMAIndicator(close, 50).ema_indicator()
     datos["RSI"] = RSIIndicator(close).rsi()
 
-    ultimo = datos.dropna().iloc[-1]
+    datos_limpios = datos.dropna()
+
+    if len(datos_limpios) < 50:
+        return None
+
+    ultimo = datos_limpios.iloc[-1]
+
 
     precio = float(ultimo["Close"])
     ema20 = float(ultimo["EMA20"])
     ema50 = float(ultimo["EMA50"])
     rsi = float(ultimo["RSI"])
 
+    # ===== FASE 3: VOLUMEN (SEGURO) =====
+    # ===== FASE 3: VOLUMEN (ROBUSTO) =====
+    try:
+        volumen_actual = float(ultimo.get("Volume", 0))
+
+        vol_series = datos["Volume"].rolling(20).mean().dropna()
+
+        if vol_series.empty:
+            volumen_relativo = 1
+        else:
+            volumen_media = float(vol_series.iloc[-1])
+            volumen_relativo = (
+                volumen_actual / volumen_media
+                if volumen_media > 0
+                else 1
+            )
+    except Exception:
+        volumen_relativo = 1
+
+
+
+
     sentimiento = sentimiento_noticias(ticker)
-    score = calcular_score(ema20, ema50, rsi, sentimiento)
+    score_base = calcular_score(ema20, ema50, rsi, sentimiento)
+    score_final = score_base
+
+
+    # ===== FASE 2: SCORE CRECIENTE =====
+    historico = cargar_historico()
+    ajuste = evaluar_tendencia_score(ticker, score_base, historico)
+    #score_final = max(0, min(score_base + ajuste["BonusScore"], 100))
+
+    ajuste_vol = evaluar_volumen(volumen_relativo)
+
+    score_final = max(
+        0,
+        min(score_final + ajuste_vol["BonusVolumen"], 100)
+    )
+
+
     razones = explicar_score(ema20, ema50, rsi, sentimiento)
 
-    if score >= 70:
+
+
+
+
+    if score_final >= 70:
         senal = "🟢 Comprar"
         momento = "Alta prioridad"
-    elif score >= 55:
+    elif score_final >= 55:
         senal = "🟡 Vigilar"
         momento = "Media prioridad"
     else:
         senal = "🔴 No comprar"
         momento = "Baja prioridad"
 
-    return {
+    resultado = {
         "Ticker": ticker,
         "Empresa": obtener_nombre_empresa(ticker),
         "Precio": round(precio, 2),
         "RSI": round(rsi, 1),
         "Tendencia": "Alcista" if ema20 > ema50 else "Bajista",
         "Sentimiento": round(sentimiento, 2),
-        "Score": score,
+        "Score": score_final,
+        "EstadoScore": ajuste["EstadoScore"],
+        "VolumenRel": round(volumen_relativo, 2),
+        "EstadoVolumen": ajuste_vol["EstadoVolumen"],
         "Señal": senal,
         "Momento": momento,
         "Razones": razones
     }
+
+
+
+    return resultado
+
+   
+
 
 # =========================================================
 # CARGAR UNIVERSO
@@ -292,6 +439,21 @@ with st.spinner("Cargando universo tecnológico..."):
     tickers = obtener_tecnologicas()
 
 st.write(f"📡 Acciones tecnológicas analizadas: **{len(tickers)}**")
+
+
+
+#OBTENER ESTADO DEL MERCADO
+
+
+estado = estado_mercado()
+
+if estado == "ALCISTA":
+    st.success("📈 Mercado tecnológico alcista (QQQ)")
+elif estado == "DEBIL":
+    st.warning("📉 Mercado tecnológico débil (QQQ)")
+else:
+    st.info("ℹ️ Estado del mercado no disponible")
+
 
 # =========================================================
 # ESCANEAR MERCADO
@@ -304,14 +466,32 @@ with st.spinner("Analizando mercado con IA..."):
             r = analizar_accion(ticker)
             if r:
                 resultados.append(r)
-        except Exception:
-            continue
+        except Exception as e:
+            st.warning(f"Error en {ticker}: {e}")
+
 
 df = pd.DataFrame(resultados)
+
+# 🔧 Limpieza defensiva del EstadoScore
+if "EstadoScore" in df.columns:
+    df["EstadoScore"] = df["EstadoScore"].astype(str)
+
 
 if df.empty:
     st.error("No se han podido generar resultados.")
     st.stop()
+
+
+
+#AJUSTAR EL UMBRAL
+
+UMBRAL_BASE = 70
+
+if estado == "DEBIL":
+    umbral_compra = 75
+else:
+    umbral_compra = UMBRAL_BASE
+
 
 # =========================================================
 # RANKING PRINCIPAL (NO TOCADO)
@@ -320,22 +500,30 @@ st.subheader("🏆 Ranking IA de oportunidades (prioridad)")
 
 ranking = df.sort_values("Score", ascending=False)
 
+ranking_vista = ranking[
+    [
+        "Ticker",
+        "Empresa",
+        "Score",
+        "EstadoScore",
+        "EstadoVolumen",
+        "VolumenRel",
+        "Precio",
+        "RSI",
+        "Tendencia",
+        "Señal",
+        "Momento",
+    ]
+]
+
 st.dataframe(
-    ranking[
-        [
-            "Ticker",
-            "Empresa",
-            "Score",
-            "Precio",
-            "RSI",
-            "Sentimiento",
-            "Tendencia",
-            "Señal",
-            "Momento",
-        ]
-    ],
+    ranking_vista.style.applymap(
+        estilo_estado_score, subset=["EstadoScore"]
+    ),
     use_container_width=True
 )
+
+
 
 guardar_historico(ranking)
 
@@ -344,7 +532,11 @@ guardar_historico(ranking)
 # =========================================================
 st.subheader("⭐ Mejores oportunidades ahora")
 
-top = ranking[ranking["Score"] >= 70]
+top = ranking[ranking["Score"] >= umbral_compra]
+
+st.caption(f"Umbral de compra actual: {umbral_compra}")
+
+
 
 if top.empty:
     st.info("No hay oportunidades claras de alta prioridad ahora mismo.")
@@ -424,6 +616,9 @@ else:
     st.success(
         f"Se han detectado {len(eventos)} cruces históricos del score ≥ 70"
     )
+
+
+
 
 
 
