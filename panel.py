@@ -110,6 +110,10 @@ def calcular_score(ema20, ema50, rsi, sentimiento):
 # =========================================================
 # EXPLICACIÓN DEL SCORE (NUEVO, NO TOCA NADA)
 # =========================================================
+
+
+
+
 def explicar_score(ema20, ema50, rsi, sentimiento):
     razones = []
 
@@ -135,6 +139,26 @@ def explicar_score(ema20, ema50, rsi, sentimiento):
         razones.append("➖ Sentimiento neutro")
 
     return razones
+
+
+with st.expander("ℹ️ ¿Qué significa el Score?"):
+    st.markdown("""
+**El Score (0–100)** indica qué tan interesante es una acción **en este momento** según análisis técnico y contexto.
+
+**Cómo interpretarlo:**
+- **80–100** → 🔥 Muy buena oportunidad
+- **70–79** → 🟢 Buena oportunidad
+- **55–69** → 🟡 Para vigilar
+- **< 55** → 🔴 No interesante ahora
+
+**Qué tiene en cuenta el Score:**
+- 📈 Tendencia (EMA20 vs EMA50)
+- 📊 Momento del precio (RSI)
+- 📰 Sentimiento de noticias recientes
+
+👉 El Score **no es una recomendación financiera**, es una herramienta para **priorizar oportunidades**.
+""")
+
 
 
 #GUARDA HISTORICO
