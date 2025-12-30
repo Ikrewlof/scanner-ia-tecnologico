@@ -1,0 +1,275 @@
+Fecha,Ticker,Empresa,Score,RSI,Sentimiento,Señal,Momento
+2025-12-29,AAPL,Apple Inc.,70,48.9,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,FER,Ferrovial SE,70,48.2,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,CSCO,"Cisco Systems, Inc.",70,53.6,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,CEG,Constellation Energy Corporatio,70,50.9,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,AVGO,Broadcom Inc.,70,45.2,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,ASML,ASML Holding N.V. - New York Re,70,50.6,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,AMZN,"Amazon.com, Inc.",70,54.4,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,APP,Applovin Corporation,70,53.4,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,APH,Amphenol Corporation,70,52.3,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,QCOM,QUALCOMM Incorporated,70,50.9,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,SBUX,Starbucks Corporation,70,52.9,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,PEP,"Pepsico, Inc.",70,44.5,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,TEL,TE Connectivity plc,70,49.8,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,TRMB,Trimble Inc.,70,47.6,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,TXN,Texas Instruments Incorporated,70,53.6,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,TSLA,"Tesla, Inc.",70,52.4,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,STX,Seagate Technology Holdings PLC,70,52.6,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,GLW,Corning Incorporated,70,54.6,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,IDXX,"IDEXX Laboratories, Inc.",70,43.2,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,IBM,International Business Machines,70,51.9,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,INTC,Intel Corporation,70,43.9,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,KDP,Keurig Dr Pepper Inc.,70,52.7,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,FICO,Fair Isaac Corporation,70,50.7,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,FANG,"Diamondback Energy, Inc.",70,46.4,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,MPWR,"Monolithic Power Systems, Inc.",70,46.9,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,ON,ON Semiconductor Corporation,70,52.4,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,NXPI,NXP Semiconductors N.V.,70,51.5,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,MRVL,"Marvell Technology, Inc.",70,46.2,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,PLTR,Palantir Technologies Inc.,70,52.0,0.0,🟢 Comprar,Alta prioridad
+2025-12-29,INSM,Insmed Incorporated,60,39.8,0.0,🟡 Vigilar,Media prioridad
+2025-12-29,ADI,"Analog Devices, Inc.",40,60.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ADBE,Adobe Inc.,40,58.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ACN,Accenture plc,40,61.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,MCHP,Microchip Technology Incorporat,40,56.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,MNST,Monster Beverage Corporation,40,68.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,PCAR,PACCAR Inc.,40,63.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ODFL,"Old Dominion Freight Line, Inc.",40,66.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,AKAM,"Akamai Technologies, Inc.",40,57.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,EA,Electronic Arts Inc.,40,67.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,GEN,Gen Digital Inc.,40,57.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,FSLR,"First Solar, Inc.",40,55.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,JBL,Jabil Inc.,40,63.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,IT,"Gartner, Inc.",40,68.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,GOOGL,Alphabet Inc.,40,55.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,INTU,Intuit Inc.,40,55.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,HPE,Hewlett Packard Enterprise Comp,40,57.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,KEYS,Keysight Technologies Inc.,40,61.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,GOOG,Alphabet Inc.,40,56.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,SHOP,Shopify Inc.,40,56.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,TER,"Teradyne, Inc.",40,58.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,TEAM,Atlassian Corporation,40,57.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,SNDK,Sandisk Corporation,40,55.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,WBD,"Warner Bros. Discovery, Inc. - ",40,66.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,TTWO,"Take-Two Interactive Software, ",40,62.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,SNPS,"Synopsys, Inc.",40,62.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ROST,"Ross Stores, Inc.",40,64.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,REGN,"Regeneron Pharmaceuticals, Inc.",40,65.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,LRCX,Lam Research Corporation,40,63.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,KLAC,KLA Corporation,40,60.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,MU,"Micron Technology, Inc.",40,67.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,EPAM,"EPAM Systems, Inc.",40,68.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,DXCM,"DexCom, Inc.",40,61.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,GILD,"Gilead Sciences, Inc.",40,56.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,GEHC,GE HealthCare Technologies Inc.,40,57.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,BKNG,Booking Holdings Inc. Common St,40,64.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CCEP,Coca-Cola Europacific Partners ,40,56.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,AZN,Astrazeneca PLC,40,61.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,AMGN,Amgen Inc.,40,55.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CSX,CSX Corporation,40,58.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CMCSA,Comcast Corporation,40,60.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CRM,"Salesforce, Inc.",40,66.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,AMAT,"Applied Materials, Inc.",40,57.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ISRG,"Intuitive Surgical, Inc.",40,60.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,WDC,Western Digital Corporation,40,57.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,MAR,Marriott International,40,64.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,VRTX,Vertex Pharmaceuticals Incorpor,40,61.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ADSK,"Autodesk, Inc.",30,53.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,XEL,Xcel Energy Inc.,30,40.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,AEP,American Electric Power Company,30,49.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ADP,"Automatic Data Processing, Inc.",30,50.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,MELI,"MercadoLibre, Inc.",30,48.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CSGP,"CoStar Group, Inc.",30,49.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,META,"Meta Platforms, Inc.",30,51.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,WDAY,"Workday, Inc.",30,47.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,TDY,Teledyne Technologies Incorpora,30,53.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ROP,"Roper Technologies, Inc.",30,52.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ORCL,Oracle Corporation,30,42.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,PANW,"Palo Alto Networks, Inc.",30,43.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,PTC,PTC Inc.,30,46.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CPRT,"Copart, Inc.",30,45.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,COST,Costco Wholesale Corporation,30,44.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,AXON,"Axon Enterprise, Inc.",30,51.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,BKR,Baker Hughes Company,30,40.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ANET,"Arista Networks, Inc.",30,54.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CDW,CDW Corporation,30,40.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CHTR,"Charter Communications, Inc.",30,49.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CDNS,"Cadence Design Systems, Inc.",30,46.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,AMD,"Advanced Micro Devices, Inc.",30,46.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,HON,Honeywell International Inc.,30,54.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,DELL,Dell Technologies Inc.,30,44.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,EXC,Exelon Corporation,30,45.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,FAST,Fastenal Company,30,50.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,FFIV,"F5, Inc.",30,53.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,FTNT,"Fortinet, Inc.",30,48.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,GDDY,GoDaddy Inc.,30,49.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,NVDA,NVIDIA Corporation,30,54.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,VRSN,"VeriSign, Inc.",30,44.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,TRI,Thomson Reuters Corp,30,45.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,TMUS,"T-Mobile US, Inc.",30,50.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,TYL,"Tyler Technologies, Inc.",30,48.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,MSFT,Microsoft Corporation,30,49.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,PAYX,"Paychex, Inc.",30,50.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,PDD,PDD Holdings Inc.,30,46.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,MSI,"Motorola Solutions, Inc.",30,49.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,NTAP,"NetApp, Inc.",30,43.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,KHC,The Kraft Heinz Company,30,47.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,MDLZ,"Mondelez International, Inc.",30,46.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ABNB,"Airbnb, Inc.",20,74.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ALNY,"Alnylam Pharmaceuticals, Inc.",20,39.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CTSH,Cognizant Technology Solutions ,20,78.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CRWD,"CrowdStrike Holdings, Inc.",20,39.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,SWKS,"Skyworks Solutions, Inc.",20,37.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ORLY,"O'Reilly Automotive, Inc.",20,36.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,PYPL,"PayPal Holdings, Inc.",20,39.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,HPQ,HP Inc.,20,37.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,DDOG,"Datadog, Inc.",20,31.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,MSTR,Strategy Inc,20,33.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,NFLX,"Netflix, Inc.",20,35.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,NOW,"ServiceNow, Inc.",20,37.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ZBRA,Zebra Technologies Corporation,20,35.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,SMCI,"Super Micro Computer, Inc.",20,36.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,DASH,"DoorDash, Inc.",0,57.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ARM,Arm Holdings plc,0,21.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,CTAS,Cintas Corporation,0,57.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,LIN,Linde plc,0,60.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,VRSK,"Verisk Analytics, Inc.",0,58.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-29,ZS,"Zscaler, Inc.",0,29.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,AAPL,Apple Inc.,70,50.0,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,KDP,Keurig Dr Pepper Inc.,70,50.2,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,CSCO,"Cisco Systems, Inc.",70,53.8,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,CEG,Constellation Energy Corporatio,70,49.7,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,AVGO,Broadcom Inc.,70,45.6,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,ASML,ASML Holding N.V. - New York Re,70,50.9,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,APH,Amphenol Corporation,70,53.4,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,AMZN,"Amazon.com, Inc.",70,54.5,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,AMGN,Amgen Inc.,70,52.9,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,QCOM,QUALCOMM Incorporated,70,49.8,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,SBUX,Starbucks Corporation,70,51.3,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,PEP,"Pepsico, Inc.",70,42.0,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,TEL,TE Connectivity plc,70,50.4,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,TRMB,Trimble Inc.,70,48.1,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,TXN,Texas Instruments Incorporated,70,52.5,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,TSLA,"Tesla, Inc.",70,50.6,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,STX,Seagate Technology Holdings PLC,70,52.0,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,GLW,Corning Incorporated,70,54.7,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,IDXX,"IDEXX Laboratories, Inc.",70,43.8,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,IBM,International Business Machines,70,53.4,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,INTC,Intel Corporation,70,45.6,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,FICO,Fair Isaac Corporation,70,52.8,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,FSLR,"First Solar, Inc.",70,53.7,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,FANG,"Diamondback Energy, Inc.",70,46.8,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,FER,Ferrovial SE,70,47.7,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,ON,ON Semiconductor Corporation,70,52.3,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,NXPI,NXP Semiconductors N.V.,70,51.2,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,MRVL,"Marvell Technology, Inc.",70,47.7,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,PLTR,Palantir Technologies Inc.,70,50.8,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,MPWR,"Monolithic Power Systems, Inc.",70,46.0,0.0,🟢 Comprar,Alta prioridad
+2025-12-30,INSM,Insmed Incorporated,60,39.3,0.0,🟡 Vigilar,Media prioridad
+2025-12-30,ADBE,Adobe Inc.,40,59.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ACN,Accenture plc,40,60.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,MCHP,Microchip Technology Incorporat,40,56.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,MNST,Monster Beverage Corporation,40,67.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,PCAR,PACCAR Inc.,40,63.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ODFL,"Old Dominion Freight Line, Inc.",40,65.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,AKAM,"Akamai Technologies, Inc.",40,55.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ADI,"Analog Devices, Inc.",40,59.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,EA,Electronic Arts Inc.,40,63.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,DXCM,"DexCom, Inc.",40,59.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,JBL,Jabil Inc.,40,63.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,IT,"Gartner, Inc.",40,68.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,GOOGL,Alphabet Inc.,40,57.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,INTU,Intuit Inc.,40,55.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,HPE,Hewlett Packard Enterprise Comp,40,57.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,KEYS,Keysight Technologies Inc.,40,61.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,GOOG,Alphabet Inc.,40,57.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,SHOP,Shopify Inc.,40,56.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,TER,"Teradyne, Inc.",40,59.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,TEAM,Atlassian Corporation,40,57.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,SNDK,Sandisk Corporation,40,57.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,WBD,"Warner Bros. Discovery, Inc. - ",40,65.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,TTWO,"Take-Two Interactive Software, ",40,63.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,SNPS,"Synopsys, Inc.",40,63.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ROST,"Ross Stores, Inc.",40,62.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,REGN,"Regeneron Pharmaceuticals, Inc.",40,65.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,LRCX,Lam Research Corporation,40,62.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,KLAC,KLA Corporation,40,58.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,MU,"Micron Technology, Inc.",40,69.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,EPAM,"EPAM Systems, Inc.",40,68.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,GEHC,GE HealthCare Technologies Inc.,40,56.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,GILD,"Gilead Sciences, Inc.",40,57.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,GEN,Gen Digital Inc.,40,55.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,BKNG,Booking Holdings Inc. Common St,40,64.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CCEP,Coca-Cola Europacific Partners ,40,55.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,AZN,Astrazeneca PLC,40,59.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,APP,Applovin Corporation,40,56.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CSX,CSX Corporation,40,59.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CMCSA,Comcast Corporation,40,62.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CRM,"Salesforce, Inc.",40,65.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,AMAT,"Applied Materials, Inc.",40,58.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ISRG,"Intuitive Surgical, Inc.",40,59.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,WDC,Western Digital Corporation,40,58.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,MAR,Marriott International,40,65.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,VRTX,Vertex Pharmaceuticals Incorpor,40,60.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ADSK,"Autodesk, Inc.",30,52.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,XEL,Xcel Energy Inc.,30,41.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,AEP,American Electric Power Company,30,45.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ADP,"Automatic Data Processing, Inc.",30,50.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,MELI,"MercadoLibre, Inc.",30,47.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,NTAP,"NetApp, Inc.",30,40.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,META,"Meta Platforms, Inc.",30,52.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,WDAY,"Workday, Inc.",30,47.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,TDY,Teledyne Technologies Incorpora,30,52.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ROP,"Roper Technologies, Inc.",30,51.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,TYL,"Tyler Technologies, Inc.",30,48.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,PANW,"Palo Alto Networks, Inc.",30,41.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,PTC,PTC Inc.,30,45.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CSGP,"CoStar Group, Inc.",30,50.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CPRT,"Copart, Inc.",30,48.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,COST,Costco Wholesale Corporation,30,42.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,BKR,Baker Hughes Company,30,40.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,AXON,"Axon Enterprise, Inc.",30,51.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CHTR,"Charter Communications, Inc.",30,50.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CDNS,"Cadence Design Systems, Inc.",30,45.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,GDDY,GoDaddy Inc.,30,46.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,AMD,"Advanced Micro Devices, Inc.",30,49.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ORCL,Oracle Corporation,30,42.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,DELL,Dell Technologies Inc.,30,43.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,HON,Honeywell International Inc.,30,54.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,FAST,Fastenal Company,30,47.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,FFIV,"F5, Inc.",30,54.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,FTNT,"Fortinet, Inc.",30,46.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,EXC,Exelon Corporation,30,41.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,KHC,The Kraft Heinz Company,30,46.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,VRSN,"VeriSign, Inc.",30,46.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,TRI,Thomson Reuters Corp,30,45.4,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,TMUS,"T-Mobile US, Inc.",30,50.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,MSI,"Motorola Solutions, Inc.",30,50.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,MSFT,Microsoft Corporation,30,49.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,PAYX,"Paychex, Inc.",30,49.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,PDD,PDD Holdings Inc.,30,46.6,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,MDLZ,"Mondelez International, Inc.",30,47.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ABNB,"Airbnb, Inc.",20,74.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CTSH,Cognizant Technology Solutions ,20,75.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ALNY,"Alnylam Pharmaceuticals, Inc.",20,38.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,HPQ,HP Inc.,20,35.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,DDOG,"Datadog, Inc.",20,31.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CDW,CDW Corporation,20,37.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CRWD,"CrowdStrike Holdings, Inc.",20,38.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,SWKS,"Skyworks Solutions, Inc.",20,37.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ZBRA,Zebra Technologies Corporation,20,37.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,PYPL,"PayPal Holdings, Inc.",20,39.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,SMCI,"Super Micro Computer, Inc.",20,33.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,MSTR,Strategy Inc,20,32.5,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,NFLX,"Netflix, Inc.",20,35.3,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,NOW,"ServiceNow, Inc.",20,37.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ORLY,"O'Reilly Automotive, Inc.",20,34.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ARM,Arm Holdings plc,0,22.0,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ANET,"Arista Networks, Inc.",0,56.1,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,CTAS,Cintas Corporation,0,57.9,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,DASH,"DoorDash, Inc.",0,55.2,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,NVDA,NVIDIA Corporation,0,55.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,LIN,Linde plc,0,60.8,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,VRSK,"Verisk Analytics, Inc.",0,58.7,0.0,🔴 No comprar,Baja prioridad
+2025-12-30,ZS,"Zscaler, Inc.",0,29.1,0.0,🔴 No comprar,Baja prioridad
